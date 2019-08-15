@@ -362,7 +362,7 @@ img {
   cursor: pointer;
 }
 .home .content-pick .destination .btn:active {
-  background: #NaNNaNNaN;
+  background: #148ea1;
   box-shadow: 0 1px #999;
   transform: translateY(4px);
 }
