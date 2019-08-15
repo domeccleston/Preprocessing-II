@@ -112,9 +112,19 @@
         align-items: center;
         color: white;
         border-radius: 15px;
+        box-shadow: 0 4px #999;
       }
 
+      .btn:hover {
+        background: darken(@button-bg, 5%);
+        cursor: pointer;
+      }
 
+      .btn:active {
+        background: darken(@button-bg, 10%);
+        box-shadow: 0 1px #999;
+        transform: translateY(4px);
+      }
     }
   }
 }// home

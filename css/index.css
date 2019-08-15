@@ -350,4 +350,14 @@ img {
   align-items: center;
   color: white;
   border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+.home .content-pick .destination .btn:hover {
+  background: #148ea1;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:active {
+  background: #117a8b;
+  box-shadow: 0 1px #999;
+  transform: translateY(4px);
 }
