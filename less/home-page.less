@@ -1,5 +1,4 @@
 .home {
-
   @media @mobile {
     width: 90%;
   }
@@ -23,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -54,7 +53,7 @@
 
     @media @mobile {
       display: flex;
-      flex-direction: column-reverse; 
+      flex-direction: column-reverse;
     }
 
     .text-content {
@@ -113,11 +112,17 @@
         color: white;
         border-radius: 15px;
         box-shadow: 0 4px #999;
-
-        @btn-press(#999);
       }
 
+      .btn:hover {
+        background: darken(@button-bg, 5%);
+        cursor: pointer;
+      }
+
+      .btn:active {
+        background: darken(@button-bg, %);
+        box-shadow: 0 1px #999;
+        transform: translateY(4px);
       }
     }
-  }
-}// home
+  }// home
