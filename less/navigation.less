@@ -9,15 +9,32 @@
 
 .navbar {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 10em;
-    align-items: center;
-    border-bottom: 2px dashed #C0C0C0;
+    justify-content: center;
+    border-bottom: 2px dashed @silver;
     height: 6em;
+
+    .nav-wrapper {
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+        align-items: center;   
+
+        @media @mobile {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
     .logo-container {
         width: 40%;
         display: flex;
         justify-content: center;
+
+        @media @mobile {
+            h1 {
+                font-size: 3rem;
+            }
+        }
     }
 
     .links-container {
@@ -25,8 +42,15 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
         a {
             font-size: 1.6rem;
         }
+
+        @media @mobile {
+            width: 100%;
+            height: 100%;
+        }
     }
+
 }
