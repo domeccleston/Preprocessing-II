@@ -202,9 +202,11 @@ img {
     flex-direction: column;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .navbar .nav-wrapper {
-    background: red;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 .navbar .logo-container {
@@ -249,7 +251,12 @@ img {
 }
 @media (max-width: 500px) {
   .home {
-    width: 90%;
+    width: 80%;
+  }
+}
+@media (max-width: 750px) {
+  .home {
+    width: 80%;
   }
 }
 .home .header-section {
