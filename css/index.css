@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+/* Structure:
+
+    Navbar: 100% width, dashed bottom border. Flex container with left-aligned logo and right aligned
+    links container, containing links.
+
+*/
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
