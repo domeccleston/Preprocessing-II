@@ -10,3 +10,16 @@
     color: white;
     border-radius: 15px;
   } */
+
+  .btn-press(@shadow) {
+
+    .btn:hover {
+      background: darken(@button-bg, 5%);
+      cursor: pointer;
+    }
+
+    .btn:active {
+      background: darken(@button-bg, 10%);
+      box-shadow: 0 1px @shadow;
+      transform: translateY(4px);
+  }
